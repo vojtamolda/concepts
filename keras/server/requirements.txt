@@ -1,0 +1,9 @@
+numpy
+scipy
+h5py
+tensorflow-gpu
+keras
+flask
+requests
+redis
+Pillow
