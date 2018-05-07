@@ -19,7 +19,13 @@ GPU acceleration. We are in an early-release Beta. Expect some adventures.
 ![AlexNet Neural Network Computational Graph](neural_network/alexnet.svg)
 
 
+## Deep Q-Network Algorithm - [`dqn/`](dqn/)
+- [`dqn.ipynb`](dqn/dqn.ipynb) - DQN agent trained on the `CartPole` environment with experience replay.
+
+![DQN Algorithm Acting on the CartPole OpenAI Gym Environment](dqn/cartpole.gif)
+
 
 ### Requirements
 - [Jupyter](http://jupyter.org/) - Application to create documents with contain code, equations, visualizations and text.
-- [PyTorch](http://pytorch.org/) - Tensor manipulation framework with automatic differentiation
+- [PyTorch](http://pytorch.org/) - Tensor manipulation framework with automatic differentiation.
+- [Open AI Gym](http://gym.openai.com/) - Toolkit for developing and comparing reinforcement learning algorithms.
