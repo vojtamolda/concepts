@@ -25,6 +25,14 @@ GPU acceleration. We are in an early-release Beta. Expect some adventures.
 ![DQN Algorithm Acting on the CartPole OpenAI Gym Environment](dqn/cartpole.gif)
 
 
+## Cross-Entropy Method - [`cem/`](cem/)
+- [`cem.ipynb`](cem/cem.ipynb) - Cross-entropy optimization method implemeted as `pytorch.optim.Optimizer`.
+- [`cem.pdf`](cem/cem.pdf) - Explanation
+
+![Cross-Entropy Method Pseudo Code](cem/cem.png)
+
+
+
 ### Requirements
 - [Jupyter](http://jupyter.org/) - Application to create documents with contain code, equations, visualizations and text.
 - [PyTorch](http://pytorch.org/) - Tensor manipulation framework with automatic differentiation.
