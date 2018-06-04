@@ -19,17 +19,25 @@ GPU acceleration. We are in an early-release Beta. Expect some adventures.
 ![AlexNet Neural Network Computational Graph](neural_network/alexnet.svg)
 
 
-## Deep Q-Network Algorithm - [`dqn/`](dqn/)
+## Deep Q-Network Reinforcement Learning Algorithm - [`dqn/`](dqn/)
 - [`dqn.ipynb`](dqn/dqn.ipynb) - DQN agent trained on the `CartPole` environment with experience replay.
 
 ![DQN Algorithm Acting on the CartPole OpenAI Gym Environment](dqn/cartpole.gif)
 
 
-## Cross-Entropy Method - [`cem/`](cem/)
+## Cross-Entropy Reinforcement Learning Method - [`cem/`](cem/)
 - [`cem.ipynb`](cem/cem.ipynb) - Cross-entropy optimization method implemeted as `pytorch.optim.Optimizer`.
 - [`cem.pdf`](cem/cem.pdf) - Explanation
 
 ![Cross-Entropy Method Pseudo Code](cem/cem.png)
+
+
+## Policy Gradients Reinforcement Learning Method - [`pg/`](pg/)
+- [`pg.ipynb`](pg/pg.ipynb) - Vanilla policy gradient algorithm with advantage.
+- [`pg.pdf`](pg/pg.pdf) - Explanation
+
+![Gradient of Expected Reward](pg/pg.png)
+
 
 
 
