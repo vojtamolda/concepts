@@ -9,3 +9,7 @@
 
 # PyTorch Datasets
 data/*
+
+# ParaView Data
+*.pvd
+*.vtu
