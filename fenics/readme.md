@@ -44,6 +44,40 @@ interface. FEniCS can run on a multitude of platforms ranging from laptops to hi
   ![Heat Transfer Equation](heat/heat.gif)
 
 
+## Hamilton-Jacobi-Bellman PDE - [`hjb/`](hjb/)
+
+### HJB PDE for Slider
+- [`slider.py`](hjb/slider.py) - HJB equation for value function `V` solved for a mass controlled by force `u`.
+- [`slider.html`](https://rawgit.com/vojtamolda/concepts/master/fenics/hjb/slider.html) - First time-step.
+- [`theory.pdf`](https://rawgit.com/vojtamolda/concepts/master/fenics/hjb/theory.pdf) - Explanation.
+  ```math
+  r = -(x0**2 + x1**2 + u**2)/2  # u - control from <-1,+1>, x0 - position, x1 - speed
+  f = [u, x0]          # system dynamics (i.e. = [dx0_dt, dx1_dt])
+
+  - V' = min(grad(V)*f + r) = 0  # HJB equation
+  - V' = - abs(dV_dx0) + dV_dx1*x0 - (x0**2 + x1**2 + 1)/2  # analytical minimization
+       gradV = 0                 # on the boundary
+           V = 0                 # initially at t = 0
+  ```
+  ![Value Function](hjb/slider.gif)
+
+
+### HJB for Pendulum
+- [`pendulum.py`](hjb/pendulum.py) - HJB equation for value function `V` solved for a pendulum controlled by torque `u`.
+- [`pendulum.html`](https://rawgit.com/vojtamolda/concepts/master/fenics/hjb/pendulum.html) - First time-step.
+- [`theory.pdf`](https://rawgit.com/vojtamolda/concepts/master/fenics/hjb/theory.pdf) - Explanation.
+  ```math
+  r = -(x0**2 + x1**2 + u**2)/2  # u - control from <-1,+1>, x0 - angle, x1 - angular velocity
+  f = [sin(x1) + u, x0]          # system dynamics (i.e. = [dx0_dt, dx1_dt])
+  
+  - V' = min(grad(V)*f + r) = 0  # HJB equation
+  - V' = dV_dx0*sin(x1) - abs(dV_dx0) + dV_dx1*x0 - (x0**2 + x1**2 + 1)/2  # analytical minimization
+       gradV = 0                 # on the boundary
+           V = 0                 # initially at t = 0
+  ```
+  ![Value Function](hjb/pendulum.gif)
+
+
 ### Requirements
 - [FEniCS](http://fenicsproject.org/) - Collection of software components for solving PDEs.
 - [ParaView](http://paraview.org/) - Multi-platform data analysis and visualization application.
