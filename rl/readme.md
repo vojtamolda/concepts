@@ -2,7 +2,7 @@
 # [Reinforcement Learning](https://openai.com/requests-for-research/)
 
 
-## CartPole - [`gym/cartpole.ipynb`](gym/cartpole.ipynb)
+## Solve _CartPole-v0_ - [`gym/cartpole.ipynb`](gym/cartpole.ipynb)
 The Cartpole environment is one of the simplest MDPs. It is extremely low dimensional, with a four-dimensional
 observation space and only two actions. The goal of this exercise is to implement several RL algorithm in order to get
 practical experience with such methods. The small size and simplicity of this environment makes it is possible to run
@@ -22,6 +22,16 @@ four parameters), and use the sign of the weighted sum to choose between the two
   two) depends on the numerical output of the inner product. Policy gradient prescribes a principled parameter update
   rule. Your goal is to implement this algorithm for the simple linear model, and see how long it takes to converge.
  
+
+## Jokes language Model - [`jokes/`](jokes/)
+Train a word-level language model on a corpus of jokes.
+ 
+- Use this [200k English jokes dataset](https://github.com/taivop/joke-dataset)
+
+- Implement a character-level LSTM (or use an existing implementation) and train it on this dataset.
+
+- Draw samples from the trained model. If successful, the output from the LSTM should be actually funny.
+
 
 ### Requirements
 - [OpenAI gym](http://gym.openai.com/) - Toolkit for developing and comparing reinforcement learning algorithms.
