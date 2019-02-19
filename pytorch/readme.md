@@ -12,11 +12,19 @@ GPU acceleration. We are in an early-release Beta. Expect some adventures.
 ![Example Computational Graph](basics/graph.svg)
 
 
-## Neural Networks - [`neural_network/`](neural_network/)
-- [`neural_network.ipynb`](neural_network/neural_network.ipynb) - Neural Network module and example network with cost function.
-- [`cifar10.ipynb`](neural_network/cifar10.ipynb) - Train a small neural network to classify CIFAR10 dataset images.
+## Cross-Entropy Reinforcement Learning Method - [`cem/`](cem/)
+- [`cem.ipynb`](cem/cem.ipynb) - Cross-entropy optimization method implemeted as `pytorch.optim.Optimizer`.
+- [`cem.pdf`](cem/cem.pdf) - Explanation
 
-![AlexNet Neural Network Computational Graph](neural_network/alexnet.svg)
+![Cross-Entropy Method Pseudo Code](cem/cem.png)
+
+
+## Distributions - [`distributions/`](distributions/)
+- [`kl_divergence.ipynb`](distributions/kl_divergence.ipynb) - Minimize KL divergence KL(p,q) and KL(q,p) betwen two multi-variate Gaussian distributions.
+- [`kl_divergence.pdf`](distributions/kl_divergence.pdf) - Explanation and theoretical derivation of the optimization algorithm.
+
+![KL(p,q) Optimization](distributions/kl_divergence_pq.png)
+![KL(q,p) Optimization](distributions/kl_divergence_qp.png)
 
 
 ## Deep Q-Network Reinforcement Learning Algorithm - [`dqn/`](dqn/)
@@ -25,11 +33,11 @@ GPU acceleration. We are in an early-release Beta. Expect some adventures.
 ![DQN Algorithm Acting on the CartPole OpenAI Gym Environment](dqn/cartpole.gif)
 
 
-## Cross-Entropy Reinforcement Learning Method - [`cem/`](cem/)
-- [`cem.ipynb`](cem/cem.ipynb) - Cross-entropy optimization method implemeted as `pytorch.optim.Optimizer`.
-- [`cem.pdf`](cem/cem.pdf) - Explanation
+## Neural Networks - [`neural_network/`](neural_network/)
+- [`neural_network.ipynb`](neural_network/neural_network.ipynb) - Neural Network module and example network with cost function.
+- [`cifar10.ipynb`](neural_network/cifar10.ipynb) - Train a small neural network to classify CIFAR10 dataset images.
 
-![Cross-Entropy Method Pseudo Code](cem/cem.png)
+![AlexNet Neural Network Computational Graph](neural_network/alexnet.svg)
 
 
 ## Policy Gradients Reinforcement Learning Method - [`pg/`](pg/)
